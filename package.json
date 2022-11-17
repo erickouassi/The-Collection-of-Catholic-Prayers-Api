@@ -1,0 +1,16 @@
+{
+  "name": "the-prayer-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Eric Kouassi",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^18.11.5",
+    "http": "^0.0.1-security",
+    "node-fetch": "^3.2.10"
+  }
+}
