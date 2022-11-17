@@ -8,10 +8,12 @@ _All of our API calls return a JSON response. No authentication required_
 
 _This example uses fetch, a modern built-in way to make HTTP requests with JavaScript._
 
-  fetch(".../v1/basic_prayers")\     
-  .then(response => response.json())\     
-  .then(response => console.log(response))\      
+  ```
+  fetch(".../v1/basic_prayers")    
+  .then(response => response.json())     
+  .then(response => console.log(response))      
   .catch(err => console.error(err));
+  ```
   
   
 
