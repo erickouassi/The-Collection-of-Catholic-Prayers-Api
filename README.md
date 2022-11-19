@@ -17,20 +17,20 @@ _This example uses fetch, a modern built-in way to make HTTP requests with JavaS
   
   
 
-Method: GET: [https://tccp-api.vercel.app](https://tccp-api.vercel.app)
+Method: GET: [https://the-collection-of-catholic-prayers-api.vercel.app](https://the-collection-of-catholic-prayers-api.vercel.app)
 
 ✅ Basic Catholic Prayers
 
-👉 [https://tccp-api.vercel.app/v1/basic\_prayers](https://tccp-api.vercel.app/v1/basic_prayers)
+👉 [https://the-collection-of-catholic-prayers-api.vercel.app/v1/basic\_prayers](https://the-collection-of-catholic-prayers-api.vercel.app/v1/basic_prayers)
 
 ✅ Stations of the Cross
 
-👉 [https://tccp-api.vercel.app/v1/stations\_of\_cross](https://tccp-api.vercel.app/v1/stations_of_cross)
+👉 [https://the-collection-of-catholic-prayers-api.vercel.app/v1/stations\_of\_cross](https://the-collection-of-catholic-prayers-api.vercel.app/v1/stations_of_cross)
 
 ✅ Saints And Feast Day List
 
-👉 [https://tccp-api.vercel.app/v1/saints](https://tccp-api.vercel.app/v1/saints)
+👉 [https://the-collection-of-catholic-prayers-api.vercel.app/v1/saints](https://the-collection-of-catholic-prayers-api.vercel.app/v1/saints)
 
 ✅ Saints And Feast Day List (French)
 
-👉 [https://tccp-project.erickouassi.repl.co/v1/saints\_fr](https://tccp-api.vercel.app/v1/saints_fr)
+👉 [https://the-collection-of-catholic-prayers-api.vercel.app/v1/saints_fr](https://the-collection-of-catholic-prayers-api.vercel.app/v1/saints_fr)
