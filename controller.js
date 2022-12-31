@@ -1,8 +1,10 @@
 //const data = require("./data");
-const dataPrayers = require("./prayers");
-const dataStations = require("./stations_of_cross");
-const dataSaints = require("./saints_en");
-const dataSaintsFr = require("./saints_fr");
+const dataPrayers = require("./db_prayers");
+const dataStations = require("./db_stations_of_cross");
+const dataSaintOfTheDay = require("./db_saint_of_the_day");
+const dataSaintDuJour = require("./db_saint_du_jour");
+//const dataSaints = require("./saints_en");
+//const dataSaintsFr = require("./saints_fr");
 //
 // Logic behind the functionalities
 var serverTime = "America/New_York"; // America/New_York /
@@ -36,7 +38,7 @@ let date = d.getDate();
 
 // date time in YYYY-MM-DD format
 let today = month + "/" + date;
-// "03/22"
+// "1/1"
 console.log(today);
 
 //
@@ -54,23 +56,23 @@ class Controller {
 		// return all dataPrayers
 		return new Promise((resolve, _) => resolve(dataStations));
 	}
-	// getting Stations of the cross
+	// getting all the saints
 	async getSaintsData() {
 		// return all dataPrayers
-		return new Promise((resolve, _) => resolve(dataSaints));
+		return new Promise((resolve, _) => resolve(dataSaintOfTheDay));
 	}
 	// getting Stations of the cross
 	async getSaintsFrData() {
 		// return all dataPrayers
-		return new Promise((resolve, _) => resolve(dataSaintsFr));
+		return new Promise((resolve, _) => resolve(dataSaintDuJour));
 	}
 
 	// getting today data
 	async getTodaySaintData() {
 		return new Promise((resolve, reject) => {
 			// get the data
-			let todayData = dataSaints.filter(function(todayIn) {
-				return todayIn.num_date == today;
+			let todayData = dataSaintOfTheDay.filter(function(todayIn) {
+				return todayIn.saint_date == today;
 			});
 			// console.log(todayData);
 			if (todayData) {
@@ -87,7 +89,7 @@ class Controller {
 	async getTodaySaintDataFr() {
 		return new Promise((resolve, reject) => {
 			// get the data
-			let todayData = dataSaintsFr.filter(function(todayIn) {
+			let todayData = dataSaintDuJour.filter(function(todayIn) {
 				return todayIn.saint_date == today;
 			});
 			// console.log(todayData);

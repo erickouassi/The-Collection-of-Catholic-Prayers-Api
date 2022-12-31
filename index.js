@@ -10,7 +10,7 @@ const server = http.createServer(async (req, res) => {
 	if (req.url === "/" && req.method === "GET") {
 		// set the status code, and content-type
 		res.writeHead(200, {
-			"Content-Type": "application/json",
+			"Content-Type": "application/json; charset=utf-8",
 			"Access-Control-Allow-Origin": "*"
 		});
 		res.end(JSON.stringify({
@@ -23,7 +23,7 @@ const server = http.createServer(async (req, res) => {
 		const allData = await new AppData().getAllData();
 		// set the status code, and content-type
 		res.writeHead(200, {
-			"Content-Type": "application/json",
+			"Content-Type": "application/json; charset=utf-8",
 			"Access-Control-Allow-Origin": "*"
 		});
 		// send the data
@@ -35,7 +35,7 @@ const server = http.createServer(async (req, res) => {
 		const stationData = await new AppData().getStationData();
 		// set the status code, and content-type
 		res.writeHead(200, {
-			"Content-Type": "application/json",
+			"Content-Type": "application/json; charset=utf-8",
 			"Access-Control-Allow-Origin": "*"
 		});
 		// send the data
@@ -49,7 +49,7 @@ const server = http.createServer(async (req, res) => {
 		const saintsData = await new AppData().getSaintsData();
 		// set the status code, and content-type
 		res.writeHead(200, {
-			"Content-Type": "application/json",
+			"Content-Type": "application/json; charset=utf-8",
 			"Access-Control-Allow-Origin": "*"
 		});
 		// send the data
@@ -76,7 +76,7 @@ const server = http.createServer(async (req, res) => {
 		const saintsFrData = await new AppData().getSaintsFrData();
 		// set the status code, and content-type
 		res.writeHead(200, {
-			"Content-Type": "application/json",
+			"Content-Type": "application/json; charset=utf-8",
 			"Access-Control-Allow-Origin": "*"
 		});
 		// send the data
@@ -101,7 +101,7 @@ const server = http.createServer(async (req, res) => {
 	// No route present
 	else {
 		res.writeHead(404, {
-			"Content-Type": "application/json",
+			"Content-Type": "application/json; charset=utf-8",
 			"Access-Control-Allow-Origin": "*"
 		});
 		res.end(JSON.stringify({
