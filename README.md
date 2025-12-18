@@ -36,24 +36,34 @@ API Endpoints
 
 All endpoints are under the /v1 path and return JSON data.
 
-EndpointDescriptionLanguageGET /v1/basic\_prayersList of common Catholic prayersEnglishGET /v1/stations\_of\_crossThe 14 Stations of the CrossEnglishGET /v1/saintsList of saints with feast daysEnglishGET /v1/saints\_frList of saints with feast daysFrench
+Endpoint,Description,Language
+GET /v1/basic_prayers,List of common Catholic prayers,English
+GET /v1/stations_of_cross,The 14 Stations of the Cross,English
+GET /v1/saints,List of saints with feast days,English
+GET /v1/saints_fr,List of saints with feast days,French
 
 ### Example Usage
 
-JavaScript
+``` JavaScript
+// Fetch basic prayers in English
+fetch('https://the-collection-of-catholic-prayers-api.vercel.app/v1/basic_prayers')
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error('Error:', error));
+```
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   // Fetch basic prayers in English  fetch('https://the-collection-of-catholic-prayers-api.vercel.app/v1/basic_prayers')    .then(response => response.json())    .then(data => console.log(data))    .catch(error => console.error('Error:', error));   `
-
-Root endpoint (/) provides a welcome message and overview of available routes.
 
 Local Installation (Optional)
 -----------------------------
 
 To run the API locally:
 
-Bash
-
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   git clone https://github.com/erickouassi/The-Collection-of-Catholic-Prayers-Api.git  cd The-Collection-of-Catholic-Prayers-Api  npm install  npm start   `
+```
+git clone https://github.com/erickouassi/The-Collection-of-Catholic-Prayers-Api.git
+cd The-Collection-of-Catholic-Prayers-Api
+npm install
+npm start
+```
 
 The server will run on http://localhost:3000.
 
@@ -122,5 +132,6 @@ About
 Built and maintained by [@erickouassi](https://github.com/erickouassi).Part of a series of open-source Catholic APIs for developers and faithful alike.
 
 Thank you for using this resource to spread authentic Catholic content! 🙏
+
 
 
